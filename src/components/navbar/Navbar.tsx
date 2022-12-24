@@ -3,7 +3,6 @@ import './navbar.scss';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hooks';
-import GitHubButton from 'react-github-btn';
 import { Box, Divider, Drawer } from '@mui/material';
 import { logoutUser } from '../../store/reducers/auth/actionCreators';
 

@@ -5,7 +5,6 @@ import { ErrorBoundary } from 'react-error-boundary';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from './hooks';
 import { authArgs, authorizeUser } from './store/reducers/auth/actionCreators';
-import { fetchPosts } from './store/reducers/posts/actionCreators';
 
 const App: FC = () => {
   const dispatch = useAppDispatch();

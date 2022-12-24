@@ -5,7 +5,6 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import { useNavigate } from 'react-router-dom';
 import { IPost } from '../../../types/post-type';
 import { formatDate } from '../../../helpers';
-import LazyLoad from 'react-lazyload';
 import { useAppSelector } from '../../../hooks';
 import EditPostButtons from '../../editPostButtonGroup/EditPostButtons';
 import TagChip from '../../tagChip/tagChip';

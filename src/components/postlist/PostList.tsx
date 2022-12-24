@@ -15,12 +15,7 @@ const PostList: FC<PostListProps> = ({ posts, error }) => {
         <div className={'errorFetching'}>Error fetching posts</div>
       ) : (
         posts.map((post, index) => (
-          <PostItem
-            key={post.id}
-            // displayImage={index === 0}
-            displayImage={index === index}
-            post={post}
-          />
+          <PostItem key={post.id} displayImage={index === 0} post={post} />
         ))
       )}
     </div>
