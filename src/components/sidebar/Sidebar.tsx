@@ -5,9 +5,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import StarIcon from '@mui/icons-material/Star';
 import PersonIcon from '@mui/icons-material/Person';
-import CreateIcon from '@mui/icons-material/Create';
 import InfoIcon from '@mui/icons-material/Info';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import MailIcon from '@mui/icons-material/Mail';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -53,10 +51,6 @@ const Sidebar: FC<{ homePage: boolean }> = ({ homePage }) => {
               <span>Thẻ bài viết</span>
             </li>
           </Link>
-          {/* <li onClick={() => handleClick('create')}>
-            <CreateIcon className={'sidebarIcon'} />
-            <span>Tạo bài viết</span>
-          </li> */}
           <Link to={'about'} className={'link'}>
             <li>
               <InfoIcon className={'sidebarIcon'} />

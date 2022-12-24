@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import './about.scss';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import { useTitle } from '../../hooks';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 const About: FC = () => {

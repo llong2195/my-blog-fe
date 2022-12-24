@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './post.scss';
 import LatestList from '../../components/latestlist/LatestList';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Comment from '../../components/comment/Comment';
 import CommentForm from '../../components/commentForm/CommentForm';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
