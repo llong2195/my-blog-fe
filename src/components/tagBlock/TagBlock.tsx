@@ -9,7 +9,7 @@ const TagBlock: FC<{ tag: ITag }> = ({ tag }) => {
   return (
     <div className={'tagBlock'}>
       <div
-        style={{ backgroundColor: `#${tag.color}` }}
+        style={{ backgroundColor: `${tag.color}` }}
         className={'tagBlockTop'}
       >
         #{tag.name}
