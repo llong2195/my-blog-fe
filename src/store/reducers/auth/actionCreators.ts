@@ -27,7 +27,9 @@ export const authorizeUser = createAsyncThunk(
           args.password!
         );
       } else if (args.type === 'checkAuth') {
-        response = await axios.get<AuthResponse>(`${API_URL}auth/refresh`, {withCredentials: true});
+        response = await axios.get<AuthResponse>(`${API_URL}auth/refresh`, 
+//         {withCredentials: true}
+        );
       }
       return response?.data;
     } catch (e) {
