@@ -5,7 +5,7 @@ export const API_URL =
   process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
 
 const api = axios.create({
-  withCredentials: true,
+//   withCredentials: true,
   baseURL: API_URL,
 });
 
@@ -30,7 +30,7 @@ api.interceptors.response.use(
       try {
         const response = await axios.get<AuthResponse>(
           `${API_URL}/auth/refresh`,
-          { withCredentials: true }
+//           { withCredentials: true }
         );
         localStorage.setItem('token', response.data.accessToken);
         return api.request(originalRequest);
